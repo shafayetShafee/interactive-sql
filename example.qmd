@@ -1,21 +1,17 @@
 ---
 title: "Interactive-sql Example"
+date: last-modified
+date-format: "DD MMM, YYYY"
 filters:
   - interactive-sql
+databases:
+  - name: employees
+    path: employees.sql
 ---
 
 
-<pre class="example">select
-  rank() over w as "rank",
-  name, department, salary
-from employees
-window w as (order by salary desc)
-order by "rank", id;</pre>
-
-
-```{=html}
-<sqlime-db name="employees" path="./employees.sql"></sqlime-db>
-<sqlime-examples db="employees" selector="pre.example" editable></sqlime-examples>
+```{.sql .interactive .employees}
+select * from employees;
 ```
 
 
