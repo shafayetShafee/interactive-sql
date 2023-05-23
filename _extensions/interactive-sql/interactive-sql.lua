@@ -7,10 +7,10 @@ local function ensureHtmlDeps()
     name = "interactive-sql",
     version = "1.0.0",
     scripts = {
-        {path = "resources/js/sqlite3.js" },
-        {path = "resources/js/sqlime-db.js" },
-        {path = "resources/js/sqlime-examples.js" },
-        {path = "resources/js/sqlite3.wasm" },
+        -- {path = "resources/js/sqlite3.js" },
+        -- {path = "resources/js/sqlime-db.js" },
+        -- {path = "resources/js/sqlime-examples.js" },
+        -- {path = "resources/js/sqlite3.wasm" },
         {
           path = "resources/js/interactive-sql.js",  
           afterBody = true
@@ -20,7 +20,14 @@ local function ensureHtmlDeps()
   })
 end
 
+local function add_resource()
+  quarto.doc.include_file(
+    "in-header",
+    "resources/header.html"
+  )
+end
 
+add_resource()
 ensureHtmlDeps()
 
 function get_dbs(databases)

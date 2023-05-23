@@ -6,7 +6,7 @@ filters:
   - interactive-sql
 databases:
   - name: employees
-    path: employees.sql
+    path: "https://github.com/nalgeon/sqlime/blob/main/employees.sql"
 ---
 
 
