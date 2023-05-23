@@ -5,19 +5,22 @@ date-format: "DD MMM, YYYY"
 filters:
   - interactive-sql
 databases:
+  - name: hr
+    path: "https://raw.githubusercontent.com/shafayetShafee/interactive-sql/main/hr.sql"
   - name: employees
-    path: "https://raw.githubusercontent.com/nalgeon/sqlime/main/employees.sql"
-  - name: demo
-    path: "https://raw.githubusercontent.com/nalgeon/sqlime/main/demo.db"
+    path: "https://raw.githubusercontent.com/shafayetShafee/interactive-sql/main/employees.db"
     editable: false
 ---
 
+## Run sql interatively from Quarto
 
-```{.sql .interactive .employees}
-select * from employees;
+```{.sql .interactive .hr}
+select * from regions;
 ```
 
 
-```{.sql .interactive .demo}
+## Not editable example
+
+```{.sql .interactive .employees}
 select * from employees;
 ```

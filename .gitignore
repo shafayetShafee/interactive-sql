@@ -2,5 +2,4 @@
 *.pdf
 *_files/
 .Rproj.user
-sales.db
-demo.db
+!docs/*
