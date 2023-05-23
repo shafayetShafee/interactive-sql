@@ -6,13 +6,14 @@ Run sql interactively from Quarto html document.
 
 ## Installing
 
-
 ```bash
 quarto add shafayetShafee/interactive-sql
 ```
 
 This will install the extension under the `_extensions` subdirectory.
 If you're using version control, you will want to check in this directory.
+
+*Note: It is recommended to use latest quarto version for using this extension.*
 
 ## Using
 
