@@ -2,6 +2,8 @@
 
 Run sql interactively from Quarto html document.
 
+[`View Live Demo`](https://shafayetshafee.github.io/interactive-sql/example.html)
+
 ## Installing
 
 
@@ -29,7 +31,7 @@ And then create non executable sql code chunk using `{.sql}` along with two clas
 
 So for example, you have added a SQL script containing code for creating a SQLite database with the name `hr`. Then When you create the code chunk use the class `.hr` so that the queries are executed for this database.
 
-```
+~~~
 ---
 title: "Interactive-sql Example"
 date: last-modified
@@ -45,7 +47,7 @@ databases:
 ```{.sql .interactive .hr}
 select * from regions;
 ```
-```
+~~~
 
 ### `editable` option
 
