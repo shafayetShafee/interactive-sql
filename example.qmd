@@ -6,7 +6,10 @@ filters:
   - interactive-sql
 databases:
   - name: employees
-    path: "https://github.com/nalgeon/sqlime/blob/main/employees.sql"
+    path: "https://raw.githubusercontent.com/nalgeon/sqlime/main/employees.sql"
+  - name: demo
+    path: "https://raw.githubusercontent.com/nalgeon/sqlime/main/demo.db"
+    editable: false
 ---
 
 
@@ -15,3 +18,6 @@ select * from employees;
 ```
 
 
+```{.sql .interactive .demo}
+select * from employees;
+```
