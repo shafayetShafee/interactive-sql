@@ -2,4 +2,6 @@
 *.pdf
 *_files/
 .Rproj.user
+.Rhistory
+*.Rproj
 !docs/*

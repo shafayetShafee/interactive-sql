@@ -1,4 +1,3 @@
-
 str = pandoc.utils.stringify
 -- p = quarto.log.output
 

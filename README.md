@@ -1,6 +1,6 @@
 # Interactive-sql Extension For Quarto
 
-Run sql interactively from Quarto html document.
+Run sql queries interactively from Quarto html document.
 
 [`View Live Demo`](https://shafayetshafee.github.io/interactive-sql/example.html)
 
@@ -34,9 +34,6 @@ So for example, you have added a SQL script containing code for creating a SQLit
 
 ~~~
 ---
-title: "Interactive-sql Example"
-date: last-modified
-date-format: "DD MMM, YYYY"
 filters:
   - interactive-sql
 databases:
@@ -66,4 +63,4 @@ Here is the source code for a minimal example: [example.qmd](example.qmd).
 
 ## Acknowledgement
 
-This extension is simply a wrapper around the amazing [`sqlime`](https://sqlime.org/about.html). So the credit goes to the [`sqlime`](https://github.com/nalgeon/sqlime) project and the maintainer [`Anton Zhiyanov`](https://twitter.com/ohmypy).
+This extension is simply a wrapper around the amazing [`sqlime`](https://sqlime.org/about.html). So thanks to the [`sqlime`](https://github.com/nalgeon/sqlime) project and the maintainer [`Anton Zhiyanov`](https://twitter.com/ohmypy).
