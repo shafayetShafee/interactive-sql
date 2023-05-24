@@ -5,3 +5,4 @@
 .Rhistory
 *.Rproj
 !docs/*
+!_extensions/interactive-sql/resources/*
