@@ -79,12 +79,33 @@
   background-color: white;
   margin: 0;
   font-family: inherit;
-  font-size: 0.8em;
+  font-size: calc(0.8*var(--sqlime-font-size));
   line-height: 1em;
 }
 
 .reveal .sqlime-example a {
   font-family: var(--sqlime-font-family);
-  font-size: var(--sqlime-font-size);
+  font-size: calc(0.8*var(--sqlime-font-size));
   line-height: var(--sqlime-line-height);
+}
+
+.reveal .sqlime-example table {
+  font-family: var(--sqlime-font-family);
+  font-size: calc(0.8*var(--sqlime-font-size));
+  line-height: var(--sqlime-line-height);
+  margin: 0;
+}
+
+.reveal .sqlime-example table th {
+  padding: 0.5em;
+}
+
+.reveal .sqlime-example table td {
+  border-bottom: none;
+}
+
+.reveal .sqlime-example div:nth-child(2) {
+  max-height: 10em;
+  max-width: 30em;
+  overflow: scroll;
 }
