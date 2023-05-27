@@ -1,9 +1,10 @@
 ---
-title: "Interactive-sql Example"
-subtitle: "Run SQL Interactively from HTML Documents Made with Quarto"
+title: "Interactive-sql"
+subtitle: "Run SQL Interactively in Revealjs Presentation Made with Quarto"
 author: Shafayet Khan Shafee
 date: last-modified
 date-format: "DD MMM, YYYY"
+format: revealjs
 filters:
   - interactive-sql
 databases:
@@ -21,7 +22,7 @@ select * from regions;
 ```
 
 
-## Not editable example
+## Not Editable example
 
 ```{.sql .interactive .employees}
 select * from employees;
