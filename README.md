@@ -58,8 +58,16 @@ You can use multiple databases too. Just list them under the `databases` key. Se
 
 ## Example
 
-Here is the source code for a minimal example: [example.qmd](example.qmd).
+Here is the source code for,
 
+- a minimal example for `html` format: [example.qmd](example.qmd).
+
+- a minimal example for `revealjs` format: [example-revelajs.qmd](example-revealjs.qmd) and the [`rendered presentation`]((https://shafayetshafee.github.io/interactive-sql/example-revealjs.html)
+
+
+## Limitation
+
+One obvious limitation is that, if you use the `embed-resources` option, sql code will not run.
 
 ## Acknowledgement
 
