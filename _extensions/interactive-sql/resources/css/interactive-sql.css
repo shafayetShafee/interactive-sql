@@ -1,7 +1,15 @@
+:root {
+  --sqlime-font-family: Consolas, "Lucida Console", Monaco, monospace;
+  --sqlime-font-size: 0.85em;
+  --sqlime-line-height: 1;
+}
+
+
+
 .sqlime-example {
-    font-family: Consolas, "Lucida Console", Monaco, monospace;
-    font-size: 0.85em;
-    line-height: 1;
+    font-family: var(--sqlime-font-family);
+    font-size: var(--sqlime-font-size);
+    line-height: var(--sqlime-line-height);
 }
 
 .sqlime-example div:nth-child(1) {
@@ -60,4 +68,23 @@
 }
 .sqlime-example table tr:last-child td {
     padding-bottom: 0.8em;
+}
+
+
+/* For Revealjs */
+
+.reveal .sqlime-example button {
+  cursor: pointer;
+  border-radius: 0;
+  background-color: white;
+  margin: 0;
+  font-family: inherit;
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+.reveal .sqlime-example a {
+  font-family: var(--sqlime-font-family);
+  font-size: var(--sqlime-font-size);
+  line-height: var(--sqlime-line-height);
 }
