@@ -4,8 +4,6 @@
   --sqlime-line-height: 1;
 }
 
-
-
 .sqlime-example {
     font-family: var(--sqlime-font-family);
     font-size: var(--sqlime-font-size);
@@ -72,7 +70,6 @@
 
 
 /* For Revealjs */
-
 .reveal .sqlime-example button {
   cursor: pointer;
   border-radius: 0;
@@ -108,4 +105,8 @@
   max-height: 10em;
   max-width: 30em;
   overflow: scroll;
+}
+
+.reveal .interactive-sql code[contenteditable="true"] {
+  padding-left: 1em;
 }
