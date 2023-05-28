@@ -20,6 +20,9 @@
     background-color: rgba(233,236,239,.30);
     border: 1px solid rgba(233,236,239,.30);
     border-radius: 0.25rem;
+    max-width: 70em;
+    max-height: 40em;
+    overflow: auto;
 }
 
 .sqlime-example table {
@@ -83,13 +86,11 @@
 .reveal .sqlime-example a {
   font-family: var(--sqlime-font-family);
   font-size: calc(0.8*var(--sqlime-font-size));
-  line-height: var(--sqlime-line-height);
 }
 
 .reveal .sqlime-example table {
   font-family: var(--sqlime-font-family);
   font-size: calc(0.8*var(--sqlime-font-size));
-  line-height: var(--sqlime-line-height);
   margin: 0;
 }
 
@@ -102,9 +103,9 @@
 }
 
 .reveal .sqlime-example div:nth-child(2) {
-  max-height: 10em;
+  max-height: 8em;
   max-width: 30em;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .reveal .interactive-sql code[contenteditable="true"] {

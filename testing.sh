@@ -30,8 +30,9 @@ case "$argument" in
     ;;
   "move")
     echo "Moving HTML files to docs folder"
-    mv example.html example-revealjs.html docs/
-    mv example_files docs/
+    cp hr-SQL-Sample-Database-Schema.png docs/ &&
+    mv example.html example-revealjs.html docs/ &&
+    mv example_files docs/ &&
     mv example-revealjs_files docs/
     ;;
   "open")
@@ -47,8 +48,9 @@ case "$argument" in
     quarto render example.qmd &&
     quarto render example-revealjs.qmd
     echo "Moving HTML files to docs folder"
-    mv example.html example-revealjs.html docs/
-    mv example_files docs/
+    cp hr-SQL-Sample-Database-Schema.png docs/ &&
+    mv example.html example-revealjs.html docs/ &&
+    mv example_files docs/ &&
     mv example-revealjs_files docs/
     echo "Opening HTML files from docs folder"
     for html_file in docs/*.html; do

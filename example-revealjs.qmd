@@ -24,7 +24,7 @@ Here we will use a sample Database called HR that manages the HR data of the sma
 
 The following database diagram illustrates the HR sample database:
 
-![ERD of HR database](other_files/hr-SQL-Sample-Database-Schema.png){#fig-erd-hr}
+![ERD of HR database](hr-SQL-Sample-Database-Schema.png){#fig-erd-hr}
 
 
 ## Editable Example

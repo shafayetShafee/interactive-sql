@@ -407,24 +407,38 @@ Shafayet Khan Shafee
 
   <p class="date">28 May, 2023</p>
 </section>
+<section id="hr-sample-data" class="slide level2">
+<h2>HR sample data</h2>
+<p>Here we will use a sample Database called HR that manages the HR data of the small businesses which is collected from <a href="https://www.sqltutorial.org/sql-sample-database/">www.sqltutorial.org</a>. And to create the database, a SQLite script file was used when rendering the document. Read the <a href="https://github.com/shafayetShafee/interactive-sql#using">extension docs</a> for details.</p>
+</section>
+<section id="erd-of-hr-database" class="slide level2">
+<h2>ERD of HR database</h2>
+<p>The following database diagram illustrates the HR sample database:</p>
+
+<img data-src="hr-SQL-Sample-Database-Schema.png" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;1: ERD of HR database</p></section>
 <section id="editable-example" class="slide level2">
 <h2>Editable Example</h2>
+<p>And now, you can run all sort of queries from the tables of the HR databases.</p>
 <div class="interactive-sql">
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource sql interactive hr number-lines code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">select</span> <span class="op">*</span> <span class="kw">from</span> regions;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="not-editable-example" class="slide level2">
-<h2>Not Editable example</h2>
+<h2>Not editable example</h2>
+<p>You can also create “not-editable” code chunk (that is, you simply can run the query but won’t be able to edit/modify it) for HR database. And to do this, just use another instance of database under the <code>database</code> key in the yaml with a different name and use the option <code>editable: false</code>.</p>
+</section>
+<section id="not-editable-example-1" class="slide level2">
+<h2>Not editable example</h2>
 <div class="interactive-sql">
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource sql interactive employees number-lines code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">select</span> <span class="op">*</span> <span class="kw">from</span> employees;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource sql interactive hr-not-editable number-lines code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">select</span> <span class="op">*</span> <span class="kw">from</span> employees;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="footer footer-default">
 
 </div>
 <sqlime-db name="hr" path="https://raw.githubusercontent.com/shafayetShafee/interactive-sql/main/hr.sql"></sqlime-db>
 <sqlime-examples db="hr" selector="div.interactive-sql pre.hr code" editable=""></sqlime-examples>
-<sqlime-db name="employees" path="https://raw.githubusercontent.com/shafayetShafee/interactive-sql/main/employees.db"></sqlime-db>
-<sqlime-examples db="employees" selector="div.interactive-sql pre.employees code"></sqlime-examples>
+<sqlime-db name="hr-not-editable" path="https://raw.githubusercontent.com/shafayetShafee/interactive-sql/main/hr.sql"></sqlime-db>
+<sqlime-examples db="hr-not-editable" selector="div.interactive-sql pre.hr-not-editable code"></sqlime-examples>
 </section>
     </div>
   </div>
