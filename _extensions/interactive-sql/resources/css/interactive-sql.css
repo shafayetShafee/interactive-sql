@@ -20,6 +20,9 @@
     background-color: rgba(233,236,239,.30);
     border: 1px solid rgba(233,236,239,.30);
     border-radius: 0.25rem;
+    max-width: 70em;
+    max-height: 40em;
+    overflow: auto;
 }
 
 .sqlime-example table {
