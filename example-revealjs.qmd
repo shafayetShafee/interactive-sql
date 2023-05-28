@@ -10,20 +10,38 @@ filters:
 databases:
   - name: hr
     path: "https://raw.githubusercontent.com/shafayetShafee/interactive-sql/main/hr.sql"
-  - name: employees
-    path: "https://raw.githubusercontent.com/shafayetShafee/interactive-sql/main/employees.db"
+  - name: hr-not-editable
+    path: "https://raw.githubusercontent.com/shafayetShafee/interactive-sql/main/hr.sql"
     editable: false
 ---
 
+## HR sample data
+
+Here we will use a sample Database called HR that manages the HR data of the small businesses which is collected from [www.sqltutorial.org](https://www.sqltutorial.org/sql-sample-database/). And to create the database, a SQLite script file was used when rendering the document. Read the [extension docs](https://github.com/shafayetShafee/interactive-sql#using) for details.
+
+
+## ERD of HR database
+
+The following database diagram illustrates the HR sample database:
+
+![ERD of HR database](other_files/hr-SQL-Sample-Database-Schema.png){#fig-erd-hr}
+
+
 ## Editable Example
+
+And now, you can run all sort of queries from the tables of the HR databases.
 
 ```{.sql .interactive .hr}
 select * from regions;
 ```
 
 
-## Not Editable example
+## Not editable example
 
-```{.sql .interactive .employees}
+You can also create "not-editable" code chunk (that is, you simply can run the query but won't be able to edit/modify it) for HR database. And to do this, just use another instance of database under the `database` key in the yaml with a different name and use the option `editable: false`.
+
+## Not editable example
+
+```{.sql .interactive .hr-not-editable}
 select * from employees;
 ```

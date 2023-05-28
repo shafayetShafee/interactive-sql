@@ -6,6 +6,7 @@ show_help() {
   echo "  render: Render example qmd files to HTML using quarto"
   echo "  move: Move HTML files to docs folder"
   echo "  open: Open HTML files from docs folder"
+  echo "  run the commands: clean, render, move then open sequentially."
   echo "  help: Show this help message"
 }
 

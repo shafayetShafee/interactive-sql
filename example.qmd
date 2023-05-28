@@ -4,15 +4,31 @@ subtitle: "Run SQL Interactively from HTML Documents Made with Quarto"
 author: Shafayet Khan Shafee
 date: last-modified
 date-format: "DD MMM, YYYY"
+code-tools: true
 filters:
   - interactive-sql
 databases:
   - name: hr
     path: "https://raw.githubusercontent.com/shafayetShafee/interactive-sql/main/hr.sql"
-  - name: employees
-    path: "https://raw.githubusercontent.com/shafayetShafee/interactive-sql/main/employees.db"
+  - name: hr-not-editable
+    path: "https://raw.githubusercontent.com/shafayetShafee/interactive-sql/main/hr.sql"
     editable: false
 ---
+
+<hr>
+
+Here we will use a sample Database called HR that manages the HR data of the small businesses which is collected from [www.sqltutorial.org](https://www.sqltutorial.org/sql-sample-database/). And to create the database, a SQLite script file was used when rendering the document. Read the [extension docs](https://github.com/shafayetShafee/interactive-sql#using) for details.
+
+> Note: You can also view the source code of this document, by clicking </> Code on top-right corner.
+
+
+## HR sample database
+
+The following database diagram illustrates the HR sample database:
+
+![ERD of HR database](other_files/hr-SQL-Sample-Database-Schema.png){#fig-erd-hr}
+
+And now, you can run all sort of queries from the tables of the HR databases.
 
 ## Editable Example
 
@@ -23,6 +39,9 @@ select * from regions;
 
 ## Not editable example
 
-```{.sql .interactive .employees}
+You can also create "not-editable" code chunk (that is, you simply can run the query but won't be able to edit/modify it) for HR database. And to do this, just use another instance of database under the `database` key in the yaml with a different name and use the option `editable: false`. Then all the code chunk with that name as class will be in not-editable mode. View the source code of this document by clicking `</> Code` on top-right corner, it will be more clear, what I am trying to say.
+
+
+```{.sql .interactive .hr-not-editable}
 select * from employees;
 ```
