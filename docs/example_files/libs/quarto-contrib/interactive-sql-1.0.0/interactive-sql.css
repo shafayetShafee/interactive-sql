@@ -1,7 +1,13 @@
+:root {
+  --sqlime-font-family: Consolas, "Lucida Console", Monaco, monospace;
+  --sqlime-font-size: 0.85em;
+  --sqlime-line-height: 1;
+}
+
 .sqlime-example {
-    font-family: Consolas, "Lucida Console", Monaco, monospace;
-    font-size: 0.85em;
-    line-height: 1;
+    font-family: var(--sqlime-font-family);
+    font-size: var(--sqlime-font-size);
+    line-height: var(--sqlime-line-height);
 }
 
 .sqlime-example div:nth-child(1) {
@@ -14,6 +20,9 @@
     background-color: rgba(233,236,239,.30);
     border: 1px solid rgba(233,236,239,.30);
     border-radius: 0.25rem;
+    max-width: 70em;
+    max-height: 40em;
+    overflow: auto;
 }
 
 .sqlime-example table {
@@ -60,4 +69,45 @@
 }
 .sqlime-example table tr:last-child td {
     padding-bottom: 0.8em;
+}
+
+
+/* For Revealjs */
+.reveal .sqlime-example button {
+  cursor: pointer;
+  border-radius: 0;
+  background-color: white;
+  margin: 0;
+  font-family: inherit;
+  font-size: calc(0.8*var(--sqlime-font-size));
+  line-height: 1em;
+}
+
+.reveal .sqlime-example a {
+  font-family: var(--sqlime-font-family);
+  font-size: calc(0.8*var(--sqlime-font-size));
+}
+
+.reveal .sqlime-example table {
+  font-family: var(--sqlime-font-family);
+  font-size: calc(0.8*var(--sqlime-font-size));
+  margin: 0;
+}
+
+.reveal .sqlime-example table th {
+  padding: 0.5em;
+}
+
+.reveal .sqlime-example table td {
+  border-bottom: none;
+}
+
+.reveal .sqlime-example div:nth-child(2) {
+  max-height: 8em;
+  max-width: 30em;
+  overflow: auto;
+}
+
+.reveal .interactive-sql code[contenteditable="true"] {
+  padding-left: 1em;
 }
